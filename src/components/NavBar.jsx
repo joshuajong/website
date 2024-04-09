@@ -19,7 +19,7 @@ function NavBar() {
           <ul className="font-medium flex flex-col p-4 md:p-8 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-800 md:bg-white border-gray-700">
             <li>
               <Link
-                to="home"
+                to="/website"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'home' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('home')}
               >
@@ -28,7 +28,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="about"
+                to="/website/about"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'about' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('about')}
               >
@@ -37,7 +37,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="blog"
+                to="/website/blog"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'blog' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('blog')}
               >
@@ -46,7 +46,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                to="contact"
+                to="/website/contact"
                 className={`block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 border-blue-500 hover:border-b-2 rounded-none ${activeLink === 'contact' ? 'text-blue-700 border-b-2' : 'text-slate-900'}`}
                 onClick={() => handleClick('contact')}
               >

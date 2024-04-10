@@ -21,15 +21,15 @@ function AppRoutes() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/website/#" element={<Main />} />
-        <Route path="/website/#/about" element={<About />} />
-        <Route path="/website/#/blog" element={<Blog />}>
+        <Route path="/website" element={<Main />} />
+        <Route path="/website/about" element={<About />} />
+        <Route path="/website/blog" element={<Blog />}>
           <Route path="thoughts" element={<ThoughtsPage />} />
           <Route path="travel" element={<TravelPage />} />
           <Route path="tech" element={<TechPage />} />
           <Route path="*" element={<NotFound />} /> {/* Fallback for /website/blog routes */}
         </Route>
-        <Route path="/website/#/contact" element={<Contact />} />
+        <Route path="/website/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} /> {/* Fallback for other routes */}
       </Routes>
       <Footer />

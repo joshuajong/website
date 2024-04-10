@@ -30,7 +30,7 @@ function AppRoutes() {
           <Route path="*" element={<NotFound />} /> {/* Fallback for /website/blog routes */}
         </Route>
         <Route path="/website/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} /> {/* Fallback for other routes */}
+        <Route path="*" element={<Main />} /> {/* Fallback for other routes */}
       </Routes>
       <Footer />
     </>

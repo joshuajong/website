@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
+import mainPicture from '../images/main_picture.jpeg';
 
 function About() {
   const internContent = [
@@ -46,18 +47,25 @@ function About() {
       <div className="mb-16">
         <h1 className="text-2xl md:text-3xl lg:text-6xl">about me</h1>
       </div>
-      <div className="mx-auto grid w-2/3 mb-12 text-lg">
-          <p>Hi there, I'm Joshua! An aspiring software engineer with a passion for problem-solving and a commitment to living life to the fullest. Currently {age}-years old, I bring several years of experience working on dynamic Rails projects, but am also constantly seeking opportunities to learn and embrace new technology stacks.
-          </p>
-          <br></br>
-          <p>In my journey, I've developed a deep appreciation for the art of coding and the intricacies of software development. I love discussing and solving problems, always questioning everything to ensure a thorough understanding. My enthusiasm extends to designing robust and scalable architectures that will still be usable in the future.
-          </p>
-          <br></br>
-          <p>Beyond the world of coding, I love food and travelling. Discovering new cuisines and experiencing different cultures makes me happiest.
-          </p>
+      <div className="mx-auto grid grid-cols-3 w-2/3 text-lg">
+        <div className="col-span-1 border-r border-red-500 p-4">
+          <img src={ mainPicture } alt="Main"></img>
+        </div>
+        <div className="col-span-2 p-4">
+          <div className="col-span-2 p-4">
+            <p>Hi there, I'm Joshua! An aspiring software engineer with a passion for problem-solving and a commitment to living life to the fullest. Currently {age}-years old, I bring several years of experience working on dynamic Rails projects, but am also constantly seeking opportunities to learn and embrace new technology stacks.
+            </p>
+            <br></br>
+            <p>In my journey, I've developed a deep appreciation for the art of coding and the intricacies of software development. I love discussing and solving problems, always questioning everything to ensure a thorough understanding. My enthusiasm extends to designing robust and scalable architectures that will still be usable in the future.
+            </p>
+            <br></br>
+            <p>Beyond the world of coding, I love food and travelling. Discovering new cuisines and experiencing different cultures makes me happiest.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-16">
+      <div className="mb-16 mt-16">
         <h1 className="text-2xl md:text-3xl lg:text-6xl">my experiences</h1>
       </div>
       {talenoxContent.map((content, index) => (
